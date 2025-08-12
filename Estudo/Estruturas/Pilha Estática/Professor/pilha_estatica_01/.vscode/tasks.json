@@ -1,0 +1,22 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-g",                 // Flag de depuração
+                "main.c",            // Arquivos fonte
+                "PilhaSequencial.c",         // Todos os .c devem ser listados
+                "-o", "pilha",     // Nome do executável
+                "-Wall", "-Wextra"    // Opcional: alertas de compilação
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
